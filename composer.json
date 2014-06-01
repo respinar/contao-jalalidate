@@ -15,8 +15,7 @@
 	"require": {
 		"php": ">=5.3.2",
 		"contao/core": "dev-master"
-	}
-	
+	},
 	"extra": {
 		"contao": {
             		"sources": {
