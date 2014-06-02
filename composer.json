@@ -1,7 +1,7 @@
 {
 	"name": "respinar/persiandate",
 	"type": "project",
-	"description": "Persian Date for Contao",
+	"description": "Persian Date Class for Contao",
 	"keywords":["contao", "persian", "date"],
     	"type": "contao-module",
     	"homepage":"https://github.com/respinar/persiandate/",
@@ -9,13 +9,21 @@
 	"authors": [
 		{
 			"name": "Hamid Abbaszadeh",
-			"homepage": "http://respinar.com/"
+			"email": "info@respinar.com",
+			"homepage": "http://respinar.com/",
+			"role":"Developer"
 		}
 	],
+	"support":{
+        	"issues":"https://github.com/respinar/persiandate/issues"
+	},	
 	"require": {
 		"php": ">=5.3.2",
 		"contao/core": ">=3.2.0"
 	},
+	"replace": {
+        	"contao-legacy/persiandate": "*"
+    	},
 	"extra": {
 		"contao": {
             		"sources": {
