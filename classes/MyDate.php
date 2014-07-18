@@ -581,7 +581,7 @@ class Date
 		if ($intTstamp === null)
 		{
 			if (TL_MODE == 'FE' && $GLOBALS['TL_LANGUAGE'] == 'fa') {
-				$strDate = PersianDate::date($strModified);
+				$strDate = PersianDate::date($strFormat);
 			} else {
 				$strDate = date($strModified);
 			}
@@ -593,7 +593,7 @@ class Date
 		else
 		{
 			if (TL_MODE == 'FE' && $GLOBALS['TL_LANGUAGE'] == 'fa') {
-				$strDate = PersianDate::date($strModified, $intTstamp);
+				$strDate = PersianDate::date($strFormat, $intTstamp);
 			} else {
 				$strDate = date($strModified, $intTstamp);
 			}
