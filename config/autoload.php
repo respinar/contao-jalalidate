@@ -17,13 +17,8 @@
 ClassLoader::addClasses(array
 (
 	// Classes
-<<<<<<< HEAD
 
 	'Contao\Date'        => 'system/modules/persiandate/classes/MyDate.php',
 	//'Contao\PersianDate' => 'system/modules/persiandate/classes/PersianDate.php',
-	
 
-=======
-	'Contao\PersianDate' => 'system/modules/persiandate/classes/PersianDate.php',
->>>>>>> 8594d693b0d20a09d236e5b941aaa68da0b834ab
 ));
