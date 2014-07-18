@@ -709,7 +709,7 @@ class PersianDate
     public static function date($format, $stamp = false, $convert = null, $jalali = null, $timezone = null)
     {
         //Timestamp + Timezone
-        $stamp    = ($stamp !== false) ? $stamp : time();
+        $stamp    = ($stamp !== null) ? $stamp : time();
         $timezone = ($timezone != null) ? $timezone : ((self::$timezone != null) ? self::$timezone : date_default_timezone_get());
         $obj      = new DateTime('@' . $stamp, new DateTimeZone($timezone));
         $obj->setTimezone(new DateTimeZone($timezone));
