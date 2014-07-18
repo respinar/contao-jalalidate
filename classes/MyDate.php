@@ -581,7 +581,7 @@ class Date
 		if ($intTstamp === null)
 		{
 			if (TL_MODE == 'FE' && $GLOBALS['TL_LANGUAGE'] == 'fa') {
-				$strDate = PersianDate::date($strFormat,$intTstamp);
+				$strDate = PersianDate::date($strModified);
 			} else {
 				$strDate = date($strModified);
 			}
@@ -593,9 +593,9 @@ class Date
 		else
 		{
 			if (TL_MODE == 'FE' && $GLOBALS['TL_LANGUAGE'] == 'fa') {
-				$strDate = PersianDate::date($strFormat,$intTstamp);
+				$strDate = PersianDate::date($strModified, $intTstamp);
 			} else {
-				$strDate = date($strModified);
+				$strDate = date($strModified, $intTstamp);
 			}
 		}
 
@@ -709,7 +709,7 @@ class PersianDate
     public static function date($format, $stamp = false, $convert = null, $jalali = null, $timezone = null)
     {
         //Timestamp + Timezone
-        $stamp    = ($stamp !== null) ? $stamp : time();
+        $stamp    = ($stamp !== false) ? $stamp : time();
         $timezone = ($timezone != null) ? $timezone : ((self::$timezone != null) ? self::$timezone : date_default_timezone_get());
         $obj      = new DateTime('@' . $stamp, new DateTimeZone($timezone));
         $obj->setTimezone(new DateTimeZone($timezone));

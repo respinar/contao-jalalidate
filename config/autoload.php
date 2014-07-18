@@ -14,6 +14,8 @@
 /**
  * Register the classes
  */
+
+			
 ClassLoader::addClasses(array
 (
 	// Classes
@@ -22,3 +24,5 @@ ClassLoader::addClasses(array
 	//'Contao\PersianDate' => 'system/modules/persiandate/classes/PersianDate.php',
 
 ));
+
+
