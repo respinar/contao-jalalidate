@@ -20,8 +20,9 @@ ClassLoader::addClasses(array
 (
 	// Classes
 
-	'Contao\Date'        => 'system/modules/persiandate/classes/MyDate.php',
-	//'Contao\PersianDate' => 'system/modules/persiandate/classes/PersianDate.php',
+	'Contao\PersianDate' => 'system/modules/persiandate/classes/PersianDate.php',
+	'Contao\Date'        => 'system/modules/persiandate/classes/Date.php',
+	
 
 ));
 
