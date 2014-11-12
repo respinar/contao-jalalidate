@@ -3,8 +3,8 @@
 	"type": "project",
 	"description": "Persian Date Class for Contao",
 	"keywords":["contao", "persian", "date"],
-    	"type": "contao-module",
-    	"homepage":"https://github.com/respinar/persiandate/",
+	"type": "contao-module",
+	"homepage":"https://github.com/respinar/persiandate/",
 	"license": "LGPL-3.0+",
 	"authors": [
 		{
@@ -23,13 +23,13 @@
 		"contao-community-alliance/composer-plugin":"2.*"
 	},
 	"replace": {
-        	"contao-legacy/persiandate": "*"
-    	},
+		"contao-legacy/persiandate": "*"
+	},
 	"extra": {
 		"contao": {
-            "sources": {
-            	"": "system/modules/persiandate"
-            }
-        }
-    }
+			"sources": {
+				"": "system/modules/persiandate"
+			}
+		}
+	}
 }
