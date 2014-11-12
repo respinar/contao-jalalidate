@@ -16,19 +16,20 @@
 	],
 	"support":{
         	"issues":"https://github.com/respinar/persiandate/issues"
-	},	
+	},
 	"require": {
-		"php": ">=5.3.2",
-		"contao/core": ">=3.2.0"
+		"php":">=5.3.2",
+		"contao/core":">=3.2,<=3.4",
+		"contao-community-alliance/composer-plugin":"2.*"
 	},
 	"replace": {
         	"contao-legacy/persiandate": "*"
     	},
 	"extra": {
 		"contao": {
-            		"sources": {
-                	"": "system/modules/persiandate"
-            	}
+            "sources": {
+            	"": "system/modules/persiandate"
+            }
         }
     }
 }
