@@ -7,8 +7,8 @@
  *
  * @package   PersianDate
  * @author    Hamid Abbaszadeh
- * @license   GNU/LGPL
- * @copyright 2014
+ * @license   LGPL-3.0+
+ * @copyright 2014-2015
  */
 
 
@@ -579,5 +579,37 @@ class PersianDate
         return array($gy, $gm, $gd);
 
     }
+    
+    
+    /**
+	 * Parse a date format string and translate textual representations
+	 *
+	 * @param string  $strFormat The date format string
+	 * @param integer $intTstamp An optional timestamp
+	 *
+	 * @return string The textual representation of the date
+	 */
+	public static function parse($strReturn,$strFormat, $intTstamp=null)
+	{
+        if (TL_MODE == 'FE' && $GLOBALS['TL_LANGUAGE'] == 'fa') {
+    		if ($intTstamp === null)
+    		{
+    			$strDate = self::date($strFormat);			
+    		}
+    		elseif (!is_numeric($intTstamp))
+    		{
+    			return '';
+    		}
+    		else
+    		{
+    			$strDate = self::date($strFormat, $intTstamp);			
+    		}
+        } else {
+            $strDate = $strReturn;
+        }
+        
+		return $strDate;
+	}
+    
 
 }
