@@ -1,34 +1,35 @@
 {
-	"name": "respinar/persiandate",
-	"type": "project",
-	"description": "Persian Date Class for Contao",
-	"keywords":["contao", "persian", "date"],
-	"type": "contao-module",
-	"homepage":"https://github.com/respinar/persiandate/",
-	"license": "LGPL-3.0+",
-	"authors": [
-		{
-			"name": "Hamid Abbaszadeh",
-			"email": "info@respinar.com",
-			"homepage": "http://respinar.com/",
-			"role":"Developer"
-		}
-	],
-	"support":{
-        	"issues":"https://github.com/respinar/persiandate/issues"
-	},
-	"require": {
-		"php":">=5.3.2",
-		"contao/core":">=3.2,<4-dev"
-	},
-	"replace": {
-		"contao-legacy/persiandate": "*"
-	},
-	"extra": {
-		"contao": {
-			"sources": {
-				"": "system/modules/persiandate"
-			}
-		}
-	}
+    "name": "respinar/contao-persiandate",
+    "type": "project",
+    "description": "Persian Date Class for Contao",
+    "keywords":["contao", "persian", "date"],
+    "type": "contao-module",
+    "homepage":"https://github.com/respinar/contao-persiandate/",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Hamid Abbaszadeh",
+            "email": "info@respinar.com",
+            "homepage": "http://respinar.com/",
+            "role":"Developer"
+        }
+    ],
+    "support":{
+        "issues":"https://github.com/respinar/contao-persiandate/issues"
+    },
+    "require": {
+        "php":">=5.3.2",
+        "contao/core":">=3.2,<3.5"
+    },
+    "replace": {
+        "contao-legacy/persiandate": "*",
+        "respinar/persiandate": "*"
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "": "system/modules/persiandate"
+            }
+        }
+    }
 }
