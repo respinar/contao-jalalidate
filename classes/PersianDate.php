@@ -591,6 +591,7 @@ class PersianDate
 	 */
 	public static function parse($strReturn,$strFormat, $intTstamp=null)
 	{
+
         if (TL_MODE == 'FE' && $GLOBALS['TL_LANGUAGE'] == 'fa') {
     		if ($intTstamp === null)
     		{

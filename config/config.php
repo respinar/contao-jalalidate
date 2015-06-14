@@ -16,4 +16,3 @@
  * Hooks
  */
 $GLOBALS['TL_HOOKS']['parseDate'][] = array('PersianDate', 'parse');
-

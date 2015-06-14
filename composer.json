@@ -19,7 +19,7 @@
     },
     "require": {
         "php":">=5.4.0",
-        "contao/core":">=3.5,<4"
+        "contao/core":">3.2,<4"
     },
     "replace": {
         "contao-legacy/persiandate": "*",
