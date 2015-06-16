@@ -1,6 +1,5 @@
 {
     "name": "respinar/contao-persiandate",
-    "type": "project",
     "description": "Persian Date Class for Contao",
     "keywords":["contao", "persian", "date"],
     "type": "contao-module",
@@ -19,7 +18,8 @@
     },
     "require": {
         "php":">=5.4.0",
-        "contao/core":">3.2,<4"
+        "contao/core":">3.2,<4",
+        "contao-community-alliance/composer-plugin": "~2.0"
     },
     "replace": {
     },
