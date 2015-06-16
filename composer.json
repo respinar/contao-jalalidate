@@ -22,8 +22,6 @@
         "contao/core":">3.2,<4"
     },
     "replace": {
-        "contao-legacy/persiandate": "*",
-        "respinar/persiandate": "*"
     },
     "extra": {
         "contao": {
