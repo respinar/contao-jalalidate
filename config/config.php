@@ -15,4 +15,6 @@
 /**
  * Hooks
  */
-$GLOBALS['TL_HOOKS']['parseDate'][] = array('PersianDate', 'parse');
+if (TL_MODE == 'FE') {
+	$GLOBALS['TL_HOOKS']['parseDate'][] = array('PersianDate', 'parse');
+}
