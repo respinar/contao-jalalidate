@@ -35,7 +35,7 @@ class PersianDate
 	private static $jalali   = true; //Use Jalali Date, If set to false, falls back to gregorian
 	private static $convert  = true; //Convert numbers to Farsi characters in utf-8
 	private static $timezone = null; //Timezone String e.g Asia/Tehran, Defaults to Server Timezone Settings
-	private static $temp = array();
+	private static $temp     = array();
 
 	/**
 	 * jDateTime::Constructor
@@ -416,11 +416,11 @@ class PersianDate
 	{
 		$days = array(
 			'sat' => array(1, 'شنبه'),
-			'sun' => array(2, 'یکشنبه'),
+			'sun' => array(2, 'یک‌شنبه'),
 			'mon' => array(3, 'دوشنبه'),
-			'tue' => array(4, 'سه شنبه'),
+			'tue' => array(4, 'سه‌شنبه'),
 			'wed' => array(5, 'چهارشنبه'),
-			'thu' => array(6, 'پنجشنبه'),
+			'thu' => array(6, 'پنج‌شنبه'),
 			'fri' => array(7, 'جمعه')
 		);
 
@@ -596,7 +596,7 @@ class PersianDate
 			if ($intTstamp === null)
 			{
 				$strDate = self::date($strFormat);
-			}			
+			}
 			else
 			{
 				$strDate = self::date($strFormat, $intTstamp);
