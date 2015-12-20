@@ -1,7 +1,7 @@
 {
     "name": "respinar/contao-persiandate",
     "description": "Persian Date Class for Contao",
-    "keywords": ["contao", "persian", "date"],
+    "keywords": ["contao", "persian", "jalali" , "shamsi", "date"],
     "type": "contao-module",
     "homepage": "http://respinar.com",
     "license": "LGPL-3.0+",

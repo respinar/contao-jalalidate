@@ -5,9 +5,10 @@
  *
  * Copyright (c) 2005-2015 Leo Feyer
  *
- * @package PersianDate
- * @link    https://contao.org
- * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
+ * @package   PersianDate
+ * @author    Hamid Abbaszadeh
+ * @license   LGPL-3.0+
+ * @copyright 2014-2015 Respinar
  */
 
 

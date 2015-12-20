@@ -8,7 +8,7 @@
  * @package   PersianDate
  * @author    Hamid Abbaszadeh
  * @license   LGPL-3.0+
- * @copyright 2014-2015
+ * @copyright 2014-2015 Respinar
  */
 
 
@@ -21,10 +21,14 @@ use DateTime,DateTimeZone;
 
 /**
  * Class PersianDate
- *
- * @copyright  2014
- * @author     Hamid Abbaszadeh
- * @package    Devtools
+ * @package    jDateTime
+ * @author     Sallar Kaboli <sallar.kaboli@gmail.com>
+ * @author     Omid Pilevar <omid.pixel@gmail.com>
+ * @copyright  2003-2012 Sallar Kaboli
+ * @license    http://opensource.org/licenses/mit-license.php The MIT License
+ * @link       https://github.com/sallar/jDateTime
+ * @see        DateTime
+ * @version    2.2.0
  */
 class PersianDate
 {
