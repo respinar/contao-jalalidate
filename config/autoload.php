@@ -5,10 +5,10 @@
  *
  * Copyright (c) 2005-2015 Leo Feyer
  *
- * @package   PersianDate
+ * @package   JalaliDate
  * @author    Hamid Abbaszadeh
  * @license   LGPL-3.0+
- * @copyright 2014-2015 Respinar
+ * @copyright 2014-2016 Respinar
  */
 
 
@@ -18,7 +18,7 @@
 ClassLoader::addClasses(array
 (
 	// Classes
-	'Contao\PersianDate' => 'system/modules/persiandate/classes/PersianDate.php'	
+	'Contao\JalaliDate' => 'system/modules/jalalidate/classes/JalaliDate.php'	
 ));
 
 
