@@ -3,13 +3,13 @@
     "description": "Persian Date Class for Contao",
     "keywords": ["contao", "iranian", "jalali" , "solar", "shamsi", "date"],
     "type": "contao-module",
-    "homepage": "http://respinar.com",
+    "homepage": "https://respinar.com",
     "license": "LGPL-3.0+",
     "authors": [
         {
             "name": "Hamid Abbaszadeh",
             "email": "info@respinar.com",
-            "homepage": "http://respinar.com",
+            "homepage": "https://respinar.com",
             "role": "Developer"
         }
     ],
@@ -24,13 +24,6 @@
     "replace": {
         "contao-legacy/persiandate": "*",
         "respinar/persiandate": "*"
-    },
-    "autoload": {
-        "psr-0": {
-            "Respinar\\JalaliDate\\": [
-                "library/"
-            ]
-        }
     },
     "extra": {
         "contao": {

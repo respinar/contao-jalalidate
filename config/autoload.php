@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Jalli date for Contao Open Source CMS
+ * Jalali date for Contao Open Source CMS
  *
  * Copyright (C) 2014-2016 Respinar
  *
@@ -12,8 +12,10 @@
 
 
 /**
- * Register namespace if loaded from extension repository
+ * Register the classes
  */
-if (class_exists('NamespaceClassLoader')) {
-    NamespaceClassLoader::add('Respinar\JalaliDate', 'system/modules/jalalidate/library');
-}
+ClassLoader::addClasses(array
+(
+	// Classes
+	'Respinar\JalaliDate\jDateTime'              => 'system/modules/jalalidate/library/Respinar/JalaliDate/JalaliDate.php',
+));
