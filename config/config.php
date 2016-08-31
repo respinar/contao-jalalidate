@@ -15,5 +15,5 @@
  * Hooks
  */
 if (TL_MODE == 'FE') {
-	$GLOBALS['TL_HOOKS']['parseDate'][] = array('JalaliDate\jDateTime', 'parse');
+	$GLOBALS['TL_HOOKS']['parseDate'][] = array('Respinar\JalaliDate\jDateTime', 'parse');
 }

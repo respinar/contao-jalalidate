@@ -15,5 +15,5 @@
  * Register namespace if loaded from extension repository
  */
 if (class_exists('NamespaceClassLoader')) {
-    NamespaceClassLoader::add('JalaliDate', 'system/modules/jalalidate/library');
+    NamespaceClassLoader::add('Respinar\JalaliDate', 'system/modules/jalalidate/library');
 }
