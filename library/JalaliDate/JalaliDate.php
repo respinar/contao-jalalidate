@@ -1,26 +1,56 @@
 <?php
 
 /**
- * Contao Open Source CMS
+ * Jalli date for Contao Open Source CMS
  *
- * Copyright (c) 2005-2016 Leo Feyer
+ * Copyright (C) 2014-2016 Respinar
  *
- * @package   JalaliDate
- * @author    Hamid Abbaszadeh
- * @license   LGPL-3.0+
- * @copyright 2014-2016 Respinar
+ * @package    JalaliDate
+ * @link       http://github.com/respinar/contao-jalalidate/
+ * @license    http://opensource.org/licenses/lgpl-3.0.html LGPL
  */
 
 
 /**
  * Namespace
  */
-namespace Contao;
+namespace JalaliDate;
 use DateTime,DateTimeZone;
 
 
 /**
- * Class JalaliDate
+ * Jalali (Shamsi) DateTime Class. Supports years higher than 2038.
+ *
+ * Copyright (c) 2012 Sallar Kaboli <sallar.kaboli@gmail.com>
+ * http://sallar.me
+ *
+ * The MIT License (MIT)
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"),
+ * to deal in the Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ * and/or sell copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following conditions:
+ *
+ * 1- The above copyright notice and this permission notice shall be included
+ * in all copies or substantial portions of the Software.
+ * 
+ * 2- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ * OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ *
+ * Original Jalali to Gregorian (and vice versa) convertor:
+ * Copyright (C) 2000  Roozbeh Pournader and Mohammad Toossi
+ *
+ * List of supported timezones can be found here:
+ * http://www.php.net/manual/en/timezones.php
+ *
+ *
  * @package    jDateTime
  * @author     Sallar Kaboli <sallar.kaboli@gmail.com>
  * @author     Omid Pilevar <omid.pixel@gmail.com>
@@ -30,7 +60,7 @@ use DateTime,DateTimeZone;
  * @see        DateTime
  * @version    2.2.0
  */
-class JalaliDate
+class jDateTime
 {
 
     /**
