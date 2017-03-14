@@ -12,10 +12,8 @@
 
 
 /**
- * Register the classes
+ * Register PSR-0 namespaces
  */
-ClassLoader::addClasses(array
-(
-	// Classes
-	'Respinar\JalaliDate\JalaliDate'              => 'system/modules/jalalidate/library/Respinar/JalaliDate/JalaliDate.php',
-));
+if (class_exists('NamespaceClassLoader')) {
+    NamespaceClassLoader::add('Respinar\JalaliDate', 'system/modules/jalali/library');
+}
