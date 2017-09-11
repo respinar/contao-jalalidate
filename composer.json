@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Respinar\\JalaliDate\\": "library/"
+            "Respinar\\JalaliDate\\": "src/"
         }
     },
     "extra": {
