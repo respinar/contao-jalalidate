@@ -47,6 +47,9 @@
  */
 namespace Respinar\JalaliDate;
 
+use \Datetime;
+use \DateTimeZone;
+
 class jDateTime
 {
 
