@@ -16,7 +16,7 @@
  */
 namespace Respinar\JalaliDate;
 
-use jDateTime;
+use Respinar\JalaliDate\jDateTime;
 
 class JalaliDate
 {
