@@ -15,5 +15,5 @@
  * Register PSR-0 namespaces
  */
 if (class_exists('NamespaceClassLoader')) {
-    NamespaceClassLoader::add('Respinar\JalaliDate', 'system/modules/jalali/library');
+    NamespaceClassLoader::add('Respinar\JalaliDate', 'system/modules/jalalidate/src');
 }
