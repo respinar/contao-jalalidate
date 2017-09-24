@@ -22,14 +22,14 @@
         "contao-community-alliance/composer-plugin":"^2.4.1 || ~3.0"
     },
     "autoload": {
-        "psr-0": {
-            "Respinar\\JalaliDate\\": "src/"
+        "psr-4": {
+            "Respinar\\JalaliDate\\": "src/library/"
         }
     },
     "extra": {
         "contao": {
             "sources": {
-                "": "system/modules/jalalidate"
+                "src": "system/modules/jalalidate"
             }
         }
     }
