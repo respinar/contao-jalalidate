@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 /**
  * Jalali (Shamsi) DateTime Class. Supports years higher than 2038.
  *
@@ -45,7 +48,7 @@
 /**
  * Namespace
  */
-namespace Respinar\JalaliDate;
+namespace Respinar\ContaoJalalidate\Helper;
 
 use \Datetime;
 use \DateTimeZone;
@@ -473,7 +476,7 @@ class jDateTime
         
         if ( is_string($timestamp) )
         {
-            if( ctype_digit($timestamp) || ( $timestamp{0} == '-' && ctype_digit(substr($timestamp, 1)) ) )
+            if( ctype_digit($timestamp) || ( $timestamp[0] == '-' && ctype_digit(substr($timestamp, 1)) ) )
             {
                 $timestamp = (int)$timestamp;
             }
