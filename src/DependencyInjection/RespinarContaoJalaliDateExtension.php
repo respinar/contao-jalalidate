@@ -31,6 +31,6 @@ class RespinarContaoJalaliDateExtension extends Extension
             $container,
             new FileLocator(__DIR__.'/../../config')
         );
-        
+
     }
 }
