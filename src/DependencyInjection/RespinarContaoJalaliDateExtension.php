@@ -12,14 +12,14 @@ declare(strict_types=1);
  * @link https://github.com/respinar/contao-jalalidate
  */
 
-namespace Respinar\ContaoJalalidate\DependencyInjection;
+namespace Respinar\JalaliDateBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class RespinarContaoJalalidateExtension extends Extension
+class RespinarContaoJalaliDateExtension extends Extension
 {
     /**
      * @throws \Exception

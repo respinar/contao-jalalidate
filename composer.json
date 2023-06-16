@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Respinar\\ContaoJalalidate\\": "src/"
+            "Respinar\\JalaliDateBundle\\": "src/"
         }
     },
     "config": {
@@ -36,7 +36,7 @@
         }
     },
     "extra": {
-        "contao-manager-plugin": "Respinar\\ContaoJalalidate\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Respinar\\JalaliDateBundle\\ContaoManager\\Plugin"
     },
     "scripts": {
         "cs-fixer": "@php tools/ecs/vendor/bin/ecs check config/ contao/ src/ templates/ tests/ --config tools/ecs/config.php --fix --ansi",

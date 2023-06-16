@@ -11,17 +11,17 @@
  */
 declare(strict_types=1);
 
-namespace Respinar\ContaoJalalidate\Tests\ContaoManager;
+namespace Respinar\JalaliDateBundle\Tests\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\DelegatingParser;
 use Contao\TestCase\ContaoTestCase;
-use Respinar\ContaoJalalidate\ContaoManager\Plugin;
-use Respinar\ContaoJalalidate\RespinarContaoJalalidate;
+use Respinar\JalaliDateBundle\ContaoManager\Plugin;
+use Respinar\JalaliDateBundle\RespinarContaoJalaliDateBundle;
 
 /**
- * @package Respinar\ContaoJalalidate\Tests\ContaoManager
+ * @package Respinar\JalaliDateBundle\Tests\ContaoManager
  */
 class PluginTest extends ContaoTestCase
 {
@@ -45,7 +45,7 @@ class PluginTest extends ContaoTestCase
 
         $this->assertCount(1, $bundles);
         $this->assertInstanceOf(BundleConfig::class, $bundles[0]);
-        $this->assertSame(RespinarContaoJalalidate::class, $bundles[0]->getName());
+        $this->assertSame(RespinarContaoJalaliDateBundle::class, $bundles[0]->getName());
         $this->assertSame([ContaoCoreBundle::class], $bundles[0]->getLoadAfter());
     }
 

@@ -12,12 +12,12 @@ declare(strict_types=1);
  * @link https://github.com/respinar/contao-jalalidate
  */
 
-namespace Respinar\ContaoJalalidate;
+namespace Respinar\JalaliDateBundle;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class RespinarContaoJalalidate extends Bundle
+class RespinarJalaliDateBundle extends Bundle
 {
     public function getPath(): string
     {

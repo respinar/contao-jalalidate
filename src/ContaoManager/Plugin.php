@@ -12,7 +12,7 @@ declare(strict_types=1);
  * @link https://github.com/respinar/contao-jalalidate
  */
 
-namespace Respinar\ContaoJalalidate\ContaoManager;
+namespace Respinar\JalaliDateBundle\ContaoManager;
 
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
@@ -23,7 +23,7 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser): array
     {
         return [
-            BundleConfig::create('Respinar\ContaoJalalidate\RespinarContaoJalalidate')
+            BundleConfig::create('Respinar\JalaliDateBundle\RespinarJalaliDateBundle')
                 ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle']),
         ];
     }

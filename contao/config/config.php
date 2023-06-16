@@ -10,6 +10,6 @@
  * @link https://github.com/respinar/contao-jalalidate
  */
 
-use Respinar\ContaoJalalidate\EventListener\ParseDateListener;
+use Respinar\JalaliDateBundle\EventListener\ParseDateListener;
 
 $GLOBALS['TL_HOOKS']['parseDate'][] = [ParseDateListener::class, '__invoke'];

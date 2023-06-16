@@ -1,9 +1,9 @@
 <?php
 // src/EventListener/ParseDateListener.php
-namespace Respinar\ContaoJalalidate\EventListener;
+namespace Respinar\JalaliDateBundle\EventListener;
 
 use Contao\CoreBundle\ServiceAnnotation\Hook;
-use Respinar\ContaoJalalidate\Helper\jDateTime;
+use Respinar\JalaliDateBundle\Helper\jDateTime;
 
 /**
  * @Hook("parseDate")
