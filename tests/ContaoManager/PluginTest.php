@@ -18,7 +18,7 @@ use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\DelegatingParser;
 use Contao\TestCase\ContaoTestCase;
 use Respinar\JalaliDateBundle\ContaoManager\Plugin;
-use Respinar\JalaliDateBundle\RespinarContaoJalaliDateBundle;
+use Respinar\JalaliDateBundle\RespinarJalaliDateBundle;
 
 /**
  * @package Respinar\JalaliDateBundle\Tests\ContaoManager
@@ -45,7 +45,7 @@ class PluginTest extends ContaoTestCase
 
         $this->assertCount(1, $bundles);
         $this->assertInstanceOf(BundleConfig::class, $bundles[0]);
-        $this->assertSame(RespinarContaoJalaliDateBundle::class, $bundles[0]->getName());
+        $this->assertSame(RespinarJalaliDateBundle::class, $bundles[0]->getName());
         $this->assertSame([ContaoCoreBundle::class], $bundles[0]->getLoadAfter());
     }
 
