@@ -1,5 +1,15 @@
 <?php
-// src/EventListener/ParseDateListener.php
+
+declare(strict_types=1);
+
+/*
+ * This file is part of Contao Jalali Date Bundle.
+ *
+ * (c) Hamid Peywasti 2023 <hamid@respinar.com>
+ *
+ * @license MIT
+ */
+
 namespace Respinar\JalaliDateBundle\EventListener;
 
 use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
