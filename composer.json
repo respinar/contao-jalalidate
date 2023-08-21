@@ -7,7 +7,7 @@
     "authors": [
         {
             "name": "Hamid Peywasti",
-            "email": "abbaszadeh.h@gmail.com",
+            "email": "hamid@respinar.com",
             "homepage": "https://respinar.com/",
             "role": "Developer"
         }
@@ -18,7 +18,7 @@
     },
     "require": {
         "php": "^8.0",
-        "contao/core-bundle": "^4.13 || ^5.0"
+        "contao/core-bundle": "^4.13 || ^5.1"
     },
     "require-dev": {
         "contao/manager-plugin": "^2.12"
