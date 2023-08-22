@@ -12,17 +12,19 @@ declare(strict_types=1);
 
 namespace Respinar\JalaliDateBundle\ContaoManager;
 
+use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
+use Respinar\JalaliDateBundle\RespinarJalaliDateBundle;
 
 class Plugin implements BundlePluginInterface
 {
     public function getBundles(ParserInterface $parser): array
     {
         return [
-            BundleConfig::create('Respinar\JalaliDateBundle\RespinarJalaliDateBundle')
-                ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle']),
+            BundleConfig::create(RespinarJalaliDateBundle::class)
+                ->setLoadAfter([ContaoCoreBundle::class]),
         ];
     }
 }
