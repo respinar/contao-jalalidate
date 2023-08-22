@@ -17,7 +17,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class RespinarContaoJalaliDateExtension extends Extension
+class RespinarJalaliDateExtension extends Extension
 {
     /**
      * @throws \Exception
@@ -29,6 +29,7 @@ class RespinarContaoJalaliDateExtension extends Extension
             $container,
             new FileLocator(__DIR__.'/../../config')
         );
+        $loader->load('services.yaml');
 
     }
 }
