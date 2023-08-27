@@ -1,27 +1,26 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of Contao Jalali Date Bundle.
  *
- * (c) Hamid Paywasti 2023 <abbaszadeh.h@gmail.com>
+ * (c) Hamid Peywasti 2023 <hamid@respinar.com>
+ *
  * @license MIT
- * For the full copyright and license information,
- * please view the LICENSE file that was distributed with this source code.
- * @link https://github.com/respinar/contao-jalalidate
  */
-declare(strict_types=1);
 
-namespace Respinar\ContaoJalalidate\Tests\ContaoManager;
+namespace Respinar\JalaliDateBundle\Tests\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\DelegatingParser;
 use Contao\TestCase\ContaoTestCase;
-use Respinar\ContaoJalalidate\ContaoManager\Plugin;
-use Respinar\ContaoJalalidate\RespinarContaoJalalidate;
+use Respinar\JalaliDateBundle\ContaoManager\Plugin;
+use Respinar\JalaliDateBundle\RespinarJalaliDateBundle;
 
 /**
- * @package Respinar\ContaoJalalidate\Tests\ContaoManager
+ * @package Respinar\JalaliDateBundle\Tests\ContaoManager
  */
 class PluginTest extends ContaoTestCase
 {
@@ -45,7 +44,7 @@ class PluginTest extends ContaoTestCase
 
         $this->assertCount(1, $bundles);
         $this->assertInstanceOf(BundleConfig::class, $bundles[0]);
-        $this->assertSame(RespinarContaoJalalidate::class, $bundles[0]->getName());
+        $this->assertSame(RespinarJalaliDateBundle::class, $bundles[0]->getName());
         $this->assertSame([ContaoCoreBundle::class], $bundles[0]->getLoadAfter());
     }
 

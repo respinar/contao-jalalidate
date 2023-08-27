@@ -1,13 +1,21 @@
 <?php
-// src/EventListener/ParseDateListener.php
-namespace Respinar\ContaoJalalidate\EventListener;
 
-use Contao\CoreBundle\ServiceAnnotation\Hook;
-use Respinar\ContaoJalalidate\Helper\jDateTime;
+declare(strict_types=1);
 
-/**
- * @Hook("parseDate")
+/*
+ * This file is part of Contao Jalali Date Bundle.
+ *
+ * (c) Hamid Peywasti 2023 <hamid@respinar.com>
+ *
+ * @license MIT
  */
+
+namespace Respinar\JalaliDateBundle\EventListener;
+
+use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
+use Respinar\JalaliDateBundle\Helper\jDateTime;
+
+#[AsHook('parseDate')]
 class ParseDateListener
 {
     public function __invoke(string $formattedDate, string $format, ?int $timestamp): string
@@ -15,13 +23,13 @@ class ParseDateListener
         if ($GLOBALS['TL_LANGUAGE'] !== 'fa') {
             return $formattedDate;
         }
-        
+
         if ($timestamp === null) {
             $strDate = jDateTime::date($format);
         } else {
             $strDate = jDateTime::date($format, $timestamp);
-        }	
+        }
 
-		return $strDate;        
+		return $strDate;
     }
 }

@@ -5,21 +5,19 @@ declare(strict_types=1);
 /*
  * This file is part of Contao Jalali Date Bundle.
  *
- * (c) Hamid Paywasti 2023 <abbaszadeh.h@gmail.com>
+ * (c) Hamid Peywasti 2023 <hamid@respinar.com>
+ *
  * @license MIT
- * For the full copyright and license information,
- * please view the LICENSE file that was distributed with this source code.
- * @link https://github.com/respinar/contao-jalalidate
  */
 
-namespace Respinar\ContaoJalalidate\DependencyInjection;
+namespace Respinar\JalaliDateBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class RespinarContaoJalalidateExtension extends Extension
+class RespinarJalaliDateExtension extends Extension
 {
     /**
      * @throws \Exception
@@ -31,6 +29,7 @@ class RespinarContaoJalalidateExtension extends Extension
             $container,
             new FileLocator(__DIR__.'/../../config')
         );
-        
+        $loader->load('services.yaml');
+
     }
 }

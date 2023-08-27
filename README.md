@@ -1,4 +1,4 @@
-Jalali Date bundle for Contao
+Jalali Date bundle for Contao open source CMS
 ===============================
 
 [![Latest Stable Version](https://poser.pugx.org/respinar/contao-jalalidate/v/stable.svg)](https://packagist.org/packages/respinar/contao-jalalidate) [![Total Downloads](https://poser.pugx.org/respinar/contao-jalalidate/downloads.svg)](https://packagist.org/packages/respinar/contao-jalalidate) [![Latest Unstable Version](https://poser.pugx.org/respinar/contao-jalalidate/v/unstable.svg)](https://packagist.org/packages/respinar/contao-jalalidate) [![License](https://poser.pugx.org/respinar/contao-jalalidate/license.svg)](https://packagist.org/packages/respinar/contao-jalalidate)
