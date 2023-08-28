@@ -12,6 +12,7 @@ declare(strict_types=1);
 
 namespace Respinar\JalaliDateBundle\EventListener;
 
+use Contao\System;
 use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
 use Respinar\JalaliDateBundle\Helper\jDateTime;
 
@@ -20,7 +21,15 @@ class ParseDateListener
 {
     public function __invoke(string $formattedDate, string $format, ?int $timestamp): string
     {
-        if ($GLOBALS['TL_LANGUAGE'] !== 'fa') {
+        $request = System::getContainer()->get('request_stack')->getCurrentRequest();
+		$isBackend = $request && System::getContainer()->get('contao.routing.scope_matcher')->isBackendRequest($request);
+
+		if ($isBackend)
+		{
+			return $formattedDate;
+		}
+
+        if (!\in_array($GLOBALS['TL_LANGUAGE'], array('fa','fa-IR'), true)) {
             return $formattedDate;
         }
 
