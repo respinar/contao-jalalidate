@@ -1,3 +1,8 @@
 services:
     _defaults:
         autoconfigure: true
+        autowire: true
+
+    Respinar\JalaliDateBundle\:
+        resource: ../src/
+        exclude: ../src/DependencyInjection
