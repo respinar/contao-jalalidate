@@ -33,6 +33,11 @@ class ParseDateListener
             return $formattedDate;
         }
 
+        // If format is null, return the original formatted date or set a default
+        if ($format === null) {
+            return $formattedDate;
+        }
+
         if ($timestamp === null) {
             $strDate = jDateTime::date($format);
         } else {
