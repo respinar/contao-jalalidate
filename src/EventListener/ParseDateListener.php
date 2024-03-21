@@ -19,7 +19,7 @@ use Respinar\JalaliDateBundle\Helper\jDateTime;
 #[AsHook('parseDate')]
 class ParseDateListener
 {
-    public function __invoke(string $formattedDate, string $format, ?int $timestamp): string
+    public function __invoke(string $formattedDate, ?string $format, ?int $timestamp): string
     {
         $request = System::getContainer()->get('request_stack')->getCurrentRequest();
 		$isBackend = $request && System::getContainer()->get('contao.routing.scope_matcher')->isBackendRequest($request);
