@@ -13,6 +13,7 @@ declare(strict_types=1);
 namespace Respinar\JalaliDateBundle\EventListener;
 
 use Contao\System;
+use Contao\PageModel;
 use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
 use Respinar\JalaliDateBundle\Helper\jDateTime;
 
@@ -21,19 +22,30 @@ class ParseDateListener
 {
     public function __invoke(string $formattedDate, ?string $format, ?int $timestamp): string
     {
-        $request = System::getContainer()->get('request_stack')->getCurrentRequest();
-		$isBackend = $request && System::getContainer()->get('contao.routing.scope_matcher')->isBackendRequest($request);
+        $requestStack = System::getContainer()->get('request_stack');
+        $scopeMatcher = System::getContainer()->get('contao.routing.scope_matcher');
 
-		if ($isBackend)
-		{
-			return $formattedDate;
-		}
+        $request = $requestStack->getCurrentRequest();
+        $isBackend = $request && $scopeMatcher->isBackendRequest($request);
 
-        if (!\in_array($GLOBALS['TL_LANGUAGE'], array('fa','fa-IR'), true)) {
+        if ($isBackend) {
             return $formattedDate;
         }
 
-        // If format is null, return the original formatted date or set a default
+        // Get the current page and its root page
+        $page = $request ? $request->attributes->get('pageModel') : null;
+        if ($page instanceof PageModel) {
+            $rootPage = PageModel::findById($page->rootId);
+        } else {
+            $rootPage = null;
+        }
+
+        // Check if Jalali date is enabled in the root page settings
+        if (!$rootPage || !$rootPage->useShamsiDate) {
+            return $formattedDate;
+        }
+
+        // If no format is provided, return the original formatted date
         if ($format === null) {
             return $formattedDate;
         }
@@ -44,6 +56,6 @@ class ParseDateListener
             $strDate = jDateTime::date($format, $timestamp);
         }
 
-		return $strDate;
+        return $strDate;
     }
 }
