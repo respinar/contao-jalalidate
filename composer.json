@@ -1,7 +1,7 @@
 {
     "name": "respinar/contao-jalalidate",
-    "description": "Jalali Date for Contao",
-    "keywords": ["contao", "bundle", "jalali", "persian", "date"],
+    "description": "Iranian Date for Contao",
+    "keywords": ["contao", "bundle", "shamsi", "khorshidi", "solar hijri", "jalali", "persian", "iranian","date"],
     "type": "contao-bundle",
     "license": "MIT",
     "authors": [
