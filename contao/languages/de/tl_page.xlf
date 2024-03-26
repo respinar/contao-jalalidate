@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="tl_page">
+        <header>
+            <tool tool-id="contao" tool-name="Contao Open Source CMS"/>
+        </header>
+        <body>
+            <trans-unit id="tl_page.useIranianDate.0">
+                <source>Use Iranian Date</source>
+                <target>Iranischer-Datum verwenden</target>
+            </trans-unit>
+            <trans-unit id="tl_page.useIranianDate.1">
+                <source>Enable Iranian date formatting for this website.</source>
+                <target>Iranischer-Datumsformatierung für diese Website aktivieren.</target>
+            </trans-unit>
+            <trans-unit id="tl_page.iranian_date_legend">
+                <source>Iranian Date Settings</source>
+                <target>Iranischer-Datumseinstellungen</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
