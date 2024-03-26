@@ -41,7 +41,7 @@ class ParseDateListener
         }
 
         // Check if Jalali date is enabled in the root page settings
-        if (!$rootPage || !$rootPage->useShamsiDate) {
+        if (!$rootPage || !$rootPage->useIranianDate) {
             return $formattedDate;
         }
 
