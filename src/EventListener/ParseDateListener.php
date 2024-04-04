@@ -22,13 +22,17 @@ class ParseDateListener
 {
     public function __invoke(string $formattedDate, ?string $format, ?int $timestamp): string
     {
-        $requestStack = System::getContainer()->get('request_stack');
-        $scopeMatcher = System::getContainer()->get('contao.routing.scope_matcher');
+        // If no format is provided, return the original formatted date
+        if ($format === null) {
+            return $formattedDate;
+        }
+
+        $container = System::getContainer();
+        $requestStack = $container->get('request_stack');
+        $scopeMatcher = $container->get('contao.routing.scope_matcher');
 
         $request = $requestStack->getCurrentRequest();
-        $isBackend = $request && $scopeMatcher->isBackendRequest($request);
-
-        if ($isBackend) {
+        if ($request && $scopeMatcher->isBackendRequest($request)) {
             return $formattedDate;
         }
 
