@@ -48,7 +48,7 @@ class ParseDateListener
         // Check if Iranian date is enabled in the root page settings
         if (!$rootPage || !$rootPage->useIranianDate) {
             return $formattedDate;
-        }
+        }        
 
         return jDateTime::date($format, $timestamp ?? time());
     }
