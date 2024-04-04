@@ -49,17 +49,6 @@ class ParseDateListener
             return $formattedDate;
         }
 
-        // If no format is provided, return the original formatted date
-        if ($format === null) {
-            return $formattedDate;
-        }
-
-        if ($timestamp === null) {
-            $strDate = jDateTime::date($format);
-        } else {
-            $strDate = jDateTime::date($format, $timestamp);
-        }
-
-        return $strDate;
+        return jDateTime::date($format, $timestamp ?? time());
     }
 }
