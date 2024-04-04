@@ -45,7 +45,7 @@ class ParseDateListener
         // Get the root page
         $rootPage = PageModel::findById($page->rootId);
 
-        // Check if Jalali date is enabled in the root page settings
+        // Check if Iranian date is enabled in the root page settings
         if (!$rootPage || !$rootPage->useIranianDate) {
             return $formattedDate;
         }
