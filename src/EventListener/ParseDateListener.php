@@ -36,13 +36,14 @@ class ParseDateListener
             return $formattedDate;
         }
 
-        // Get the current page and its root page
-        $page = $request ? $request->attributes->get('pageModel') : null;
-        if ($page instanceof PageModel) {
-            $rootPage = PageModel::findById($page->rootId);
-        } else {
-            $rootPage = null;
+        // Use $GLOBALS['objPage'] to reliably get the current page model
+        $page = $GLOBALS['objPage'] ?? null;
+        if (!$page instanceof PageModel) {
+            return $formattedDate;
         }
+
+        // Get the root page
+        $rootPage = PageModel::findById($page->rootId);
 
         // Check if Jalali date is enabled in the root page settings
         if (!$rootPage || !$rootPage->useIranianDate) {
