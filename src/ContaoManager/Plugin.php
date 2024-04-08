@@ -10,20 +10,20 @@ declare(strict_types=1);
  * @license MIT
  */
 
-namespace Respinar\JalaliDateBundle\ContaoManager;
+namespace Respinar\ContaoJalaliDateBundle\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use Respinar\JalaliDateBundle\RespinarJalaliDateBundle;
+use Respinar\ContaoJalaliDateBundle\RespinarContaoJalaliDateBundle;
 
 class Plugin implements BundlePluginInterface
 {
     public function getBundles(ParserInterface $parser): array
     {
         return [
-            BundleConfig::create(RespinarJalaliDateBundle::class)
+            BundleConfig::create(RespinarContaoJalaliDateBundle::class)
                 ->setLoadAfter([ContaoCoreBundle::class]),
         ];
     }
