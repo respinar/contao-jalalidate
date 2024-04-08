@@ -28,13 +28,6 @@
             "Respinar\\ContaoJalaliDateBundle\\": "src/"
         }
     },
-    "config": {
-        "allow-plugins": {
-            "contao-components/installer": false,
-            "contao/manager-plugin": false,
-            "contao-community-alliance/composer-plugin": true
-        }
-    },
     "extra": {
         "contao-manager-plugin": "Respinar\\ContaoJalaliDateBundle\\ContaoManager\\Plugin"
     },
