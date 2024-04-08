@@ -5,4 +5,4 @@ services:
 
     Respinar\ContaoJalaliDateBundle\:
         resource: ../src/
-        exclude: ../src/DependencyInjection
+        exclude: ../src/ContaoManager/
