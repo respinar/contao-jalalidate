@@ -17,8 +17,8 @@
         "source": "https://github.com/respinar/contao-jalalidate"
     },
     "require": {
-        "php": "^7.4 || ^8.0",
-        "contao/core-bundle": "^4.13 || ^5.2"
+        "php": "^8.0",
+        "contao/core-bundle": "^5.2"
     },
     "require-dev": {
         "contao/manager-plugin": "^2.0"
