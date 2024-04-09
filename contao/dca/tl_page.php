@@ -21,7 +21,6 @@ PaletteManipulator::create()
 
 // Define the field
 $GLOBALS['TL_DCA']['tl_page']['fields']['useIranianDate'] = [
-    'label'     => &$GLOBALS['TL_LANG']['tl_page']['useIranianDate'],
     'exclude'   => true,
     'inputType' => 'checkbox',
     'eval'      => ['tl_class' => 'w50 clr'],
