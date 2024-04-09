@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" target-language="en" datatype="plaintext" original="tl_page">
+    <file source-language="en" datatype="plaintext" original="tl_page">
         <body>
             <trans-unit id="tl_page.useIranianDate.0">
                 <source>Use Iranian Date</source>
-                <target>Use Iranian Date</target>
             </trans-unit>
             <trans-unit id="tl_page.useIranianDate.1">
                 <source>Enable Iranian date formatting for this website.</source>
-                <target>Enable Iranian date formatting for this website.</target>
             </trans-unit>
             <trans-unit id="tl_page.iranian_date_legend">
                 <source>Iranian Date Settings</source>
-                <target>Iranian Date Settings</target>
             </trans-unit>
         </body>
     </file>
