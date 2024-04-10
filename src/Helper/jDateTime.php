@@ -48,7 +48,7 @@ declare(strict_types=1);
 /**
  * Namespace
  */
-namespace Respinar\JalaliDateBundle\Helper;
+namespace Respinar\ContaoJalaliDateBundle\Helper;
 
 use \Datetime;
 use \DateTimeZone;
