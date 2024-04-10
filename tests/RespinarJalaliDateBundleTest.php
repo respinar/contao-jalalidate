@@ -10,9 +10,9 @@ declare(strict_types=1);
  * @license MIT
  */
 
-namespace Respinar\JalaliDateBundle\Tests;
+namespace Respinar\ContaoJalaliDateBundle\Tests;
 
-use Contao\JalaliDateBundle\RespinarJalaliDateBundle;
+use Contao\ContaoJalaliDateBundle\RespinarJalaliDateBundle;
 use PHPUnit\Framework\TestCase;
 
 class RespinarJalaliDateBundleTest extends TestCase
@@ -21,6 +21,6 @@ class RespinarJalaliDateBundleTest extends TestCase
     {
         $bundle = new RespinarJalaliDateBundle();
 
-        $this->assertInstanceOf('Respinar\JalaliDateBundle\RespinarJalaliDateBundle', $bundle);
+        $this->assertInstanceOf('Respinar\ContaoJalaliDateBundle\RespinarJalaliDateBundle', $bundle);
     }
 }
