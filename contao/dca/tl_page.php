@@ -24,5 +24,5 @@ $GLOBALS['TL_DCA']['tl_page']['fields']['useIranianDate'] = [
     'exclude'   => true,
     'inputType' => 'checkbox',
     'eval'      => ['tl_class' => 'w50 clr'],
-    'sql'       => "char(1) NOT NULL default ''"
+    'sql'       => ['type' => 'boolean', 'default' => false]
 ];
