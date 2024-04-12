@@ -10,10 +10,10 @@ declare(strict_types=1);
  * @license MIT
  */
 
-namespace Respinar\ContaoJalaliDateBundle\EventListener;
+namespace Respinar\ContaoIranianDateBundle\EventListener;
 
 use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
-use Respinar\ContaoJalaliDateBundle\Helper\jDateTime;
+use Respinar\ContaoIranianDateBundle\Helper\jDateTime;
 
 #[AsHook('replaceInsertTags')]
 class InsertTagListener
