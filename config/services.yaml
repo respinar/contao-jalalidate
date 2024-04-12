@@ -3,6 +3,6 @@ services:
         autoconfigure: true
         autowire: true
 
-    Respinar\ContaoJalaliDateBundle\:
+    Respinar\ContaoIranianDateBundle\:
         resource: ../src/
         exclude: ../src/ContaoManager/
