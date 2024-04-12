@@ -25,11 +25,11 @@
     },
     "autoload": {
         "psr-4": {
-            "Respinar\\ContaoJalaliDateBundle\\": "src/"
+            "Respinar\\ContaoIranianDateBundle\\": "src/"
         }
     },
     "extra": {
-        "contao-manager-plugin": "Respinar\\ContaoJalaliDateBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Respinar\\ContaoIranianDateBundle\\ContaoManager\\Plugin"
     },
     "scripts": {
         "cs-fixer": "@php tools/ecs/vendor/bin/ecs check config/ contao/ src/ templates/ tests/ --config tools/ecs/config.php --fix --ansi",
