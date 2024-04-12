@@ -10,17 +10,17 @@ declare(strict_types=1);
  * @license MIT
  */
 
-namespace Respinar\ContaoJalaliDateBundle\Tests\ContaoManager;
+namespace Respinar\ContaoIranianDateBundle\Tests\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\DelegatingParser;
 use Contao\TestCase\ContaoTestCase;
-use Respinar\ContaoJalaliDateBundle\ContaoManager\Plugin;
-use Respinar\ContaoJalaliDateBundle\RespinarContaoJalaliDateBundle;
+use Respinar\ContaoIranianDateBundle\ContaoManager\Plugin;
+use Respinar\ContaoIranianDateBundle\RespinarContaoIranianDateBundle;
 
 /**
- * @package Respinar\ContaoJalaliDateBundle\Tests\ContaoManager
+ * @package Respinar\ContaoIranianDateBundle\Tests\ContaoManager
  */
 class PluginTest extends ContaoTestCase
 {
